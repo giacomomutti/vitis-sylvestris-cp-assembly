@@ -18,23 +18,28 @@ if [ -d $outdir ];
       mkdir $outdir
 fi
 
-cd ./$outdir
+cd ./$outdir;
 
-echo "This process may take a while, if unstable connection"
-echo "with the server, try running it with screen -L"
+echo "This process may take a while, if unstable connection";
+echo "with the server, try running it with screen -L";
 
+start=$(date +%s);
 fastq-dump --defline-qual "+" --split-files --gzip --clip $SRA;
 
-echo "dumping is done"
+end=$(date +%s);
+DIFF=$(( $end - $start ));
+echo "dumping is done;";
+echo "execution time: $diff seconds";
 
-fqlist=$( ls | grep "fastq")
-for file in $fqlist
+fqlist=$( ls | grep "fastq");
+
+for file in $fqlist;
     do
       #create name for file
       outbase=$( echo $file | cut -d '.' -f1 );
       echo "Processing the file $file";
       fastq-stats $file > $outbase".stats.txt";
-      echo "Done";
 done
+echo "Done";
 
 date;
