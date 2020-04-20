@@ -8,7 +8,7 @@ R2=$3
 echo "This script only works with paired fastq files"
 
 
-if [ -f $R1 ] && [ -f $R2 ] && [ -f $ref ] && [[ $R1 == *f*q ]] && [[ $R2 == *f*q ]] && [[ $ref == *f*a ]];
+if [ -f $R1 ] && [ -f $R2 ] && [ -f $ref ] && [[ $R1 == *f*q* ]] && [[ $R2 == *f*q* ]] && [[ $ref == *f*a ]];
   then
     start=$(date +%s);
     echo "indexing the reference";
@@ -32,6 +32,6 @@ if [ -f $R1 ] && [ -f $R2 ] && [ -f $ref ] && [[ $R1 == *f*q ]] && [[ $R2 == *f*
     date;
     #indexing the bam would be useful?
   else
-    echo "USAGE: bam-to-ref.sh <ref.fasta> <R1.fastq> <R2.fastq>"
+    echo "USAGE: 3-bam-to-ref.sh <ref.fasta> <R1.fastq> <R2.fastq>"
     exit 1;
 fi

@@ -6,7 +6,7 @@ outdir=$2
 
 if [ -z $SRA ] || [ -z $outdir ];
   then
-    echo "USAGE: data-mining.sh <SRA-accession> <outdir>";
+    echo "USAGE: 1-data-mining.sh <SRA-accession> <outdir>";
     exit 1;
 fi
 

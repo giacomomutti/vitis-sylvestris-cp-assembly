@@ -30,6 +30,6 @@ if [ -f $R1 ] && [ -f $R2 ] && [[ $R1 == *f*q ]] && [[ $R2 == *f*q ]];
       done
     date
   else
-    echo "USAGE: trimming.sh <R1.fastq> <R2.fastq>";
+    echo "USAGE: 2-trimming.sh <R1.fastq> <R2.fastq>";
     exit 1;
 fi

@@ -28,6 +28,6 @@ if [ -f $bam ] && [[ $R1 == *f*q ]] && [[ $R2 == *f*q ]] && [[ $bam == *bam ]];
       echo "execution time: $diff seconds";
       date;
     else
-          echo "USAGE: bam-to-fastq.sh <bam> <out_R1.fastq> <out_R2.fastq>";
+          echo "USAGE: 4-bam-to-fastq.sh <bam> <out_R1.fastq> <out_R2.fastq>";
           exit 1;
 fi
