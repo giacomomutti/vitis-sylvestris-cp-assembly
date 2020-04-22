@@ -1,7 +1,7 @@
 # *Vitis sylvestris* chloroplast assembly
 ## Abstract
 Chloroplast genomes are a valuable resource for phylogenetic analyses, population genetics and species identification. 
-Studying the chloroplast genome of wild grape (\emph{Vitis vinifera subsp. sylvestris}) may shed light on the genomic 
+Studying the chloroplast genome of wild grape (*Vitis vinifera subsp. sylvestris*) may shed light on the genomic 
 effects of domestication. Here the complete wild grape chloroplast genome is assembled with Illumina reads deposited 
 in the Sequence Read Archive (SRA) using the ABySS assembler. This approach, despite the inherent disadvantages of short-reads,
 may offer good results rapidly if the possible parameters for the assembly are thoroughly explored. The genome is 160,184bp in 
