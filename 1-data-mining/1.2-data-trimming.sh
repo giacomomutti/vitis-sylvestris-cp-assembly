@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-adapters=/data/99_genomicclass/00_shared_data/Genomics/IlluminaAdapters_V2.fasta
+#adapters= <set location of the adapters>
 
 echo "Adapters found in $adapters";
 
